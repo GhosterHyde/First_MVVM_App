@@ -1,0 +1,50 @@
+﻿<Application x:Class="CarRental_Director.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:CarRental_Director.ViewModel"
+             xmlns:vw="clr-namespace:CarRental_Director.View">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/AddingTextTheme.xaml"/>
+                <ResourceDictionary Source="Theme/SaveButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/FieldTheme.xaml"/>
+                <ResourceDictionary Source="Theme/EmptyOrSuccessfulNotes.xaml"/>
+                <ResourceDictionary Source="Theme/ListViewTheme.xaml"/>
+                <ResourceDictionary Source="Theme/HeaderForHintsTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ComboBoxTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type vm:EmptyWorkspaceViewModel}">
+                <vw:EmptyWorkspaceView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ClientViewModel}">
+                <vw:ClientView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:CarViewModel}">
+                <vw:CarView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:OrderViewModel}">
+                <vw:OrderView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AllClientsViewModel}">
+                <vw:AllClientsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AllCarsViewModel}">
+                <vw:AllCarView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AllOrdersViewModel}">
+                <vw:AllOrdersView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ErrorReportingViewModel}">
+                <vw:ErrorReportingView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DataBaseIsLoadingViewModel}">
+                <vw:DataBaseIsLoadingView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:LoadingViewModel}">
+                <vw:LoadingDataView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

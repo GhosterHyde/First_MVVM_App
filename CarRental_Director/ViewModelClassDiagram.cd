@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CarRental_Director.ViewModel.MainWindowViewModel">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="GetDataFromDB" Hidden="true" />
+      <Method Name="InitializeData" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAAAAqBAAAAAACCAEABAIAAAAAAAIAAAgCAJAgABA=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.AllCarsViewModel">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="CreateAllCars" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAARAQAABAAAAAAAAAAAAAAAAAAEACAAAAAAA=</HashCode>
+      <FileName>ViewModel\AllCarsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.AllClientsViewModel">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="CreateAllClients" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAQBAAAEAAAAQAAAAAAAAAAABAAAAAAQ=</HashCode>
+      <FileName>ViewModel\AllClientsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.AllOrdersViewModel">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="AddCarRepository" Hidden="true" />
+      <Method Name="AddClientRepository" Hidden="true" />
+      <Method Name="AddOrderRepository" Hidden="true" />
+      <Method Name="AddRepositories" Hidden="true" />
+      <Method Name="CreateAllOrders" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAACAAKAAAAGABAAACAAAAAAAAAABAAAEACABAAAAg=</HashCode>
+      <FileName>ViewModel\AllOrdersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.CarViewModel">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="AddDataForCar" Hidden="true" />
+      <Property Name="CanSave" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Property Name="IsNewCar" Hidden="true" />
+      <Method Name="NullExceptionChecking" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAKAAIAAAARAAQBCAAEAIBACAAQgAAAAAUACAAABAAg=</HashCode>
+      <FileName>ViewModel\CarViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.ClientViewModel">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="AddDataForClient" Hidden="true" />
+      <Property Name="CanSave" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Property Name="IsNewClient" Hidden="true" />
+      <Method Name="NullExceptionChecking" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAMgIAAAAAUAAAAMAQAACBAAgAAACAEEEEAAAAAw=</HashCode>
+      <FileName>ViewModel\ClientViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.OrderViewModel">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="AddDataForOrder" Hidden="true" />
+      <Property Name="CanSave" Hidden="true" />
+      <Method Name="CheckData" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Property Name="IsNewOrder" Hidden="true" />
+      <Method Name="NullArgumentsChecking" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAEAAIAKAEQgAQhAACEAAAACAAAgAAAAAEACIBAAAAQ=</HashCode>
+      <FileName>ViewModel\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.DataBaseIsLoadingViewModel" Collapsed="true">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DataBaseIsLoadingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.EmptyWorkspaceViewModel" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\EmptyWorkspaceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.ErrorReportingViewModel">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ViewModel\ErrorReportingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.ViewModel.LoadingViewModel" Collapsed="true">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\LoadingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

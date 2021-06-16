@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="CarRental_Director.View.ClientView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Name="Workspace"
+             mc:Ignorable="d"
+             d:DesignHeight="500" d:DesignWidth="800">
+    <StackPanel Background="DarkSlateBlue" SizeChanged="StackPanel_SizeChanged">
+        <StackPanel.Resources>
+            <DataTemplate DataType="{x:Type ValidationError}">
+                <TextBlock 
+                    FontStyle="Italic"
+                    Foreground="White"
+                    HorizontalAlignment="Right"
+                    Margin="0,1,10,0"
+                    Text="{Binding Path=ErrorContent}" />
+            </DataTemplate>
+        </StackPanel.Resources>
+        <Label Content="Client Page"
+               Name="header"
+               Foreground="White"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="MainSB">
+            <StackPanel>
+                <TextBlock Text="Surname" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="Surname" 
+                         Margin="10" 
+                         Text="{Binding Path=Surname, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=Surname, Path=(Validation.Errors).CurrentItem}"/>
+                <TextBlock Text="First Name" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="Firstname" 
+                         Margin="10" Text="{Binding Path=FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=Firstname, Path=(Validation.Errors).CurrentItem}"/>
+                <TextBlock Text="Second Name" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="Secondame" 
+                         Margin="10" 
+                         Text="{Binding Path=SecondName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=Secondame, Path=(Validation.Errors).CurrentItem}"/>
+                <TextBlock Text="Driven License Number" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="DrivenLicense" 
+                         Margin="10" 
+                         Text="{Binding Path=DrivenLicense, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=DrivenLicense, Path=(Validation.Errors).CurrentItem}"/>
+                <TextBlock Text="Address" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="Address" 
+                         Margin="10" 
+                         Text="{Binding Path=Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=Address, Path=(Validation.Errors).CurrentItem}"/>
+                <TextBlock Text="Phone Number" 
+                           Style="{StaticResource FieldHintText}"/>
+                <TextBox x:Name="PhoneNumber" 
+                         Margin="10" 
+                         Text="{Binding Path=PhoneNumber, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="25" 
+                         Style="{StaticResource FieldTheme}"/>
+                <ContentPresenter Content="{Binding ElementName=PhoneNumber, Path=(Validation.Errors).CurrentItem}"/>
+                <Button x:Name="SaveNewClient" 
+                        Command="{Binding Path=SaveClient}" 
+                        Style="{StaticResource SaveButtonTheme}"/>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

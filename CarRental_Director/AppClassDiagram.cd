@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CarRental_Director.ViewModel.MainWindowViewModel">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="GetDataFromDB" Hidden="true" />
+      <Method Name="InitializeData" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAAAAqBAAAAAACCAEABAIAAAAAAAIAAAgCAJAgABA=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.Core.ObservableObject">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\ObservableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.Core.RelayCommand">
+    <Position X="13.25" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="ExecuteAsync" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Core\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.Model.Car">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="GetValidationError" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Method Name="IsStringMissing" Hidden="true" />
+      <Method Name="IsValidCostOrPrice" Hidden="true" />
+      <Method Name="IsValidManufactureYear" Hidden="true" />
+      <Method Name="IsValidMileage" Hidden="true" />
+      <Method Name="IsValidStateNumber" Hidden="true" />
+      <Method Name="ValidateBrand" Hidden="true" />
+      <Method Name="ValidateCost" Hidden="true" />
+      <Method Name="ValidateManufactureYear" Hidden="true" />
+      <Method Name="ValidateMileage" Hidden="true" />
+      <Method Name="ValidateRentalPrice" Hidden="true" />
+      <Method Name="ValidateStateNumber" Hidden="true" />
+      <Method Name="ValidateType" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BIOBBAAgAkAAgAREAAkAIHEAkCQ5CQAgAQAQAAADEAA=</HashCode>
+      <FileName>Model\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.Model.Client">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="GetValidationError" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Method Name="IsStringMissing" Hidden="true" />
+      <Method Name="IsValidDrivenLicense" Hidden="true" />
+      <Method Name="IsValidFIO" Hidden="true" />
+      <Method Name="IsValidPhoneNumber" Hidden="true" />
+      <Method Name="PhoneNumberContainsInvalidSymbols" Hidden="true" />
+      <Method Name="PlusesIncorrect" Hidden="true" />
+      <Method Name="SymbolIncorrect" Hidden="true" />
+      <Method Name="SymbolIsDigit" Hidden="true" />
+      <Method Name="ValidateDrivenLicense" Hidden="true" />
+      <Method Name="ValidateFirstName" Hidden="true" />
+      <Method Name="ValidatePhoneNumber" Hidden="true" />
+      <Method Name="ValidateSecondName" Hidden="true" />
+      <Method Name="ValidateSurname" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAABAUggAQBQgAgECEkEQAAABFIgAAISCAAAEBBEEAA=</HashCode>
+      <FileName>Model\Client.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.Model.Order">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="DatesIncorrect" Hidden="true" />
+      <Method Name="GetValidationError" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Method Name="IsMissing" Hidden="true" />
+      <Method Name="IsNotSelectedDate" Hidden="true" />
+      <Method Name="ValidateClientOrCar" Hidden="true" />
+      <Method Name="ValidateIssueDate" Hidden="true" />
+      <Method Name="ValidateReturnDate" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BoABBAAgAARggAAANCkAAAgAIAAgAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Model\Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarRental_Director.DataContext">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.DataAccess.CarRepository">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="LoadCars" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gICAAAAAAYAAgAACAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\CarRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.DataAccess.OrderRepository">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="LoadOrders" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAEAAQAgAAEAAAAAAAAABAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\OrderRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarRental_Director.DataAccess.ClientRepository">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="LoadClients" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAIAAAAAAAAAAAIAAACAAAAAIAAAAADgAAAAAA=</HashCode>
+      <FileName>DataAccess\ClientRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
